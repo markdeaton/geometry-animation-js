@@ -1,6 +1,13 @@
 /* 
  * 1. Create an instance for each graphic to animate; pass in graphic, graphicsLayer, and duration (ms) to the constructor.
  * 2. Call animatePolyline()
+ * Example:
+ * 		var pla = new PolylineAnimation({
+ *			graphic			: gpcConnector, 	// The polyline graphic you want to animate from 0 - 100%
+ *			graphicsLayer	: glCityConnectors, // The graphics layer to display the graphic on (you haven't added the graphic yet)
+ *			duration		: 2500				// How long the animation should last, in milliseconds
+ *		});
+ *		pla.animatePolyline();
  */
 define(
 	[
